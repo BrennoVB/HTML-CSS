@@ -3,36 +3,33 @@
 div.container{
     display: grid;
     grid-template-rows: repeat(5, 100px);
-    grid-template-columns:  repeat(4, 1fr);
-    
+    grid-template-columns:  repeat(5, 1fr);
     gap: 10px;
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: center;
+    
 }
 
 div.item1{
-    grid-column: 1 / 6;
-    background-color: black;
-    color: white;
+    background-color: blue;
+    grid-area: 1 / 1 / 2 / 6;
     
 }
 
 div.item2{
-   
+   background-color: red;
+   grid-area: 2 / 1 / 2 / 6;
 }
     
 div.item3{
-   grid-row: 3 / -4;
-   grid-column: 3 / -2;
-   text-align: ;
+  background-color: blueviolet;
+  grid-area: 3 / 1 / 6 / 4;
 }
 
 div.item4{
-   
+   background-color: yellow;
+       grid-area: 3 / 4 / 6 / 6;
 }
 
 div.item5{
-    
+   background-color: aqua; 
+   grid-area:  6 / 1 / -1 / -1 ;
 }
